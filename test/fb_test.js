@@ -81,9 +81,19 @@ exports.fbConnect = {
             },
 
             function(pageTitle, next) {
+
+                console.log('about to get available points');
+
+                bingUser.getAvailablePoints(function(err, points) {
+                    console.log('number of points:'+points);
+                    next(null, pageTitle);
+                });
+            },
+
+            function(pageTitle, next) {
                 var count = 0,
                     allResults = [],
-                    numSearches = 22;
+                    numSearches = 2;
 
                 console.log('-');
                 console.log(pageTitle);
