@@ -5,10 +5,10 @@
     "keywords": ["bing"],
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/patorjk/bing-user.git"
     },
     "bugs": {
-        "url": ""
+        "url": "https://github.com/patorjk/bing-user/issues"
     },
     "author": {
         "name": "Patrick Gillespie",
